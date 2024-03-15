@@ -1,0 +1,46 @@
+- Is JSX mandatory for React?
+JSX is an extension syntax for writing HTML and JavaScript together in React. While not mandatory, JSX simplifies React development by allowing cleaner and more readable code.
+
+- Is ES6 mandatory for React?
+ES6 is highly recommended for React development due to its extensive use in modern React projects. Familiarity with ES6 features such as classes, arrow functions, and variables is beneficial.
+
+- {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} in JSX.
+{TitleComponent}: Represents a JavaScript expression or variable.
+{<TitleComponent/>}: Represents a component returning JSX.
+{<TitleComponent></TitleComponent>}: Represents a component with child components enclosed within the opening and closing tags.
+
+- How can I write comments in JSX?
+JSX comments are written using {/* */} for single or multiline comments.
+
+- What is <React.Fragment></React.Fragment> and <></>?
+<React.Fragment></React.Fragment> and <></> are used to group multiple elements 
+in JSX without adding extra nodes to the DOM.
+
+- What is Reconciliation in React?
+Reconciliation is the process through which React updates the DOM efficiently by 
+comparing the Virtual DOM with the real DOM and updating only the changed nodes.
+
+- What is React Fiber?
+React Fiber is a concept in ReactJS that enhances rendering performance by enabling
+asynchronous rendering and efficient resource allocation.
+
+- Why do we need keys in React?
+Keys are used in React to identify and track changes in lists of elements, ensuring 
+efficient updates and rendering.
+
+- Can we use index as keys in React?
+While possible, using the index as keys in React is not recommended as it may cause 
+issues with component state and performance.
+
+- What is props in React? Ways to pass props.
+Props are arguments passed into React components to pass data from parent to 
+child components. Props can be passed as attributes or properties to child components.
+
+- What is Config Driven UI?
+Config Driven UI refers to building user interfaces based on configuration data,
+allowing for dynamic and scalable application development.
+
+- Difference between Virtual DOM and Real DOM?
+The Virtual DOM is a lightweight abstraction of the real DOM, enabling efficient updates
+and rendering by comparing and updating only the changed nodes. In contrast, the Real DOM 
+represents the actual UI of the application and is less efficient in updates and rendering.
