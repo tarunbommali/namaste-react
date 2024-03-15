@@ -25,9 +25,9 @@
 - 02:08:05 – Lists & Keys, react.js org
 - 02:12:00 – Session Recap
 
-#### [Project Live Link]()
+#### [Project Live Link](https://github.com/tarunbommali/EP.04-Namaste-React)
 
-#### [GitHub Repository](https://github.com/tarunbommali/Feastly)
+#### [GitHub Repository](https://github.com/tarunbommali/EP.04-Namaste-React)
 
 #### References:
 
