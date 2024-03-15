@@ -1,0 +1,15 @@
+>>>>> Laying the Foundation Theory
+
+- What is JSX?
+JSX is JavaScript XML, allowing HTML elements to be written in JavaScript for easier integration into React applications.
+
+- Superpowers of JSX.
+JSX allows markup and logic to be written together in a single file, making code maintenance and debugging easier.
+
+- Role of type attribute in script tag? What options can I use there?
+The type attribute specifies the type of script inside the <script> tag. Options include "text/javascript", "text/ecmascript", "module", "text/babel", and "text/typescript".
+
+- {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} in JSX.
+{TitleComponent}: Represents a JavaScript expression or variable.
+{<TitleComponent/>}: Represents a component returning JSX.
+{<TitleComponent></TitleComponent>}: Represents a component with child components enclosed within the opening and closing tags.
