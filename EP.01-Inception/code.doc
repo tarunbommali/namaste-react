@@ -1,0 +1,71 @@
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
+
+<!-- HTML -->
+
+<!-- using HTML ELEMENT -->
+<h1>Hello World! This message is displayed using HTML.</h1>
+
+<!-- using DOM MANIPULATION in js -->
+<div id="js-root"></div>
+
+<!-- using React -->
+<div id="react-root">
+    <h3>If any elements are there in this react-root, ReactDOM Replaces all the elements inside this root with newly Rendered Elements.</h3>
+</div>
+
+<div id="external-react-root"> </div>
+
+<p><strong> INITIAL TEXT IN REACT ROOT</strong>: If any elements are there in this
+    react-root, ReactDOM
+    will Replaces
+    all the elements inside this root with newly Rendered Elements.</p>
+
+
+
+<!-- js DOM Manipulation -->
+<script>
+    const jsRootEl = document.getElementById("js-root");
+    const h2El = document.createElement("h2");
+    h2El.textContent = "Hello World! This message is displayed using JavaScript.";
+    jsRootEl.appendChild(h2El);
+</script>
+
+
+
+<!-- importing CDN  -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<!-- react inline javascript -->
+<script>
+    const h3El = React.createElement("h3", { id: "reactInlineHeading" }, "Hello World! This message is displayed using React (inline javascript).")
+
+    const root = ReactDOM.createRoot(document.getElementById("react-root"))
+    root.render(h3El)
+</script>
+
+<!-- external javascript -->
+<script src="./App.js"></script>
+
+
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
+
+<!-- Js -->
+//Nested Element
+const divEl = React.createElement("div",{ id: "divContainer" },React.createElement("h3",{ id: "reactHeading" }, "i'm inside parent Element."));
+
+const externalRoot = ReactDOM.createRoot(document.getElementById("external-react-root"));
+
+externalRoot.render(divEl);
+
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
+
+<!-- CSS -->
+
+#reactHeading {
+color: red;
+}
+
+#reactInlineHeading {
+color: green;
+}
