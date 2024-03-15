@@ -1,25 +1,23 @@
-> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
-
-<!-- HTML -->
+>>>>> HTML
 
 <!-- using HTML ELEMENT -->
 <h1>Hello World! This message is displayed using HTML.</h1>
 
-<!-- using DOM MANIPULATION in js -->
+<!-- using javascript DOM MANIPULATION root element -->
 <div id="js-root"></div>
 
-<!-- using React -->
-<div id="react-root">
-    <h3>If any elements are there in this react-root, ReactDOM Replaces all the elements inside this root with newly Rendered Elements.</h3>
-</div>
+<!-- using React , root Element for react -->
+<div id="react-root"></div>
 
+
+<!-- using React, root Element for External  File --> 
 <div id="external-react-root"> </div>
 
-<p><strong> INITIAL TEXT IN REACT ROOT</strong>: If any elements are there in this
-    react-root, ReactDOM
-    will Replaces
-    all the elements inside this root with newly Rendered Elements.</p>
 
+<!-- 
+If any elements are there in this react-root in html, ReactDOM will 
+Replaces all the elements inside the  root element of it, with rendered Elements.
+-->
 
 
 <!-- js DOM Manipulation -->
@@ -48,19 +46,19 @@
 <script src="./App.js"></script>
 
 
-> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
+>>>>> Nested Element using React syntax
 
-<!-- Js -->
-//Nested Element
-const divEl = React.createElement("div",{ id: "divContainer" },React.createElement("h3",{ id: "reactHeading" }, "i'm inside parent Element."));
+const divEl = React.createElement(
+                "div",{ id: "divContainer" },
+                        React.createElement("h3",{ id: "reactHeading" },
+                                 "i'm inside parent Element.")
+                );
 
 const externalRoot = ReactDOM.createRoot(document.getElementById("external-react-root"));
-
 externalRoot.render(divEl);
 
-> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 
-<!-- CSS -->
+>>>>> CSS 
 
 #reactHeading {
 color: red;

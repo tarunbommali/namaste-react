@@ -1,0 +1,45 @@
+>>>>> Igniting our App Theory Questions
+
+
+- What is NPM?
+NPM is a tool for package management and the default manager for Node projects.
+It's used to interact with the NPM Registry, a database of packages, to add or update packages.
+
+- What is Parcel/Webpack? Why do we need it?
+Parcel/Webpack are bundlers for web applications. They bundle files for development and production, offering features like fast performance, zero configuration, and file optimization.
+
+- What is .parcel-cache?
+.parcel-cache is used by Parcel to store project information, reducing building time by avoiding re-parsing and re-analyzing files.
+
+- What is npx?
+npx is a tool to execute packages without installing them. It's included with npm and allows running packages from the npm registry.
+
+- What is the difference between dependencies vs devDependencies?
+Dependencies are necessary for the app's functionality, while devDependencies are only needed during development. They're saved using different commands, and devDependencies aren't included in production.
+
+- What is Tree Shaking?
+Tree shaking removes unused code during application development, optimizing the final build by eliminating unnecessary code.
+
+- What is Hot Module Replacement?
+Hot Module Replacement (HMR) updates modules while the application is running without a full reload, speeding up development by retaining application state.
+
+- List down your favorite 5 superpowers of Parcel and describe any 3 of them in your own words.
+Superpowers of Parcel include HMR, file watcher algorithm, minification, image optimization, and caching during development. HMR updates modules on the fly, the file watcher monitors file changes, and minification reduces file size.
+
+- What is .gitignore? What should we add and not add into it?
+.gitignore tells Git which files to ignore during commits. It should include files like node_modules and sensitive information, but not essential project files.
+
+- What is the difference between package.json and package-lock.json?
+package.json contains project metadata, while package-lock.json stores exact versions of dependencies. The latter ensures consistent installs across different environments.
+
+- Why should I not modify package-lock.json?
+Modifying package-lock.json can lead to dependency issues in the production environment. It's automatically handled by NPM and shouldn't be altered manually.
+
+- What is node_modules? Is it a good idea to push that on git?
+node_modules is a folder containing project dependencies. It's not recommended to push it to Git due to its large size and the availability of package.json for dependency installation.
+
+- What is the dist folder?
+The dist folder contains the minimized version of the source code used in production web applications, along with compiled modules.
+
+- What is browserslist?
+Browserslist specifies which browsers should be supported in a frontend app. It's used by frameworks/libraries to ensure compatibility.
