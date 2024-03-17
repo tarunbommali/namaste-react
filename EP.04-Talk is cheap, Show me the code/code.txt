@@ -11,3 +11,9 @@ Make your card dynamic(pass in props)
 Props - passing arguments to a function - Use Destructuring & Spread operator
 Render your cards with dynamic data of restaurants
 Use Array.map to render all the restaurants
+
+
+
+#### [Project Live Link](https://github.com/tarunbommali/EP.04-Namaste-React)
+
+#### [GitHub Repository](https://github.com/tarunbommali/EP.04-Namaste-React)
